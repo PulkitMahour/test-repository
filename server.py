@@ -4,12 +4,13 @@ import os
 x = [ ]
 lst = os.listdir()
 
-def b():
+def create_list():
 	"<ul>"
+	a = ""
 	for i in range(11):
-		# "<ul>"
-		a = "<li>" + str(i) + "/<li>"
+		a += "<li>" + str(i) + "/<li>"
 	"</ul>"
+	return a 
 	# return a
 
 class handler(BaseHTTPRequestHandler):
